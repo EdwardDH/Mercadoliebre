@@ -1,0 +1,247 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+p {
+    font-size: 12px;
+}
+
+
+
+.cabecera {
+    background-color: #EAC926;
+    padding-bottom: 20px;
+}
+
+.cabecera-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5%;
+    
+}
+
+.menu-hamburguesa {
+    background-color: #03264c;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 50%;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.buscador form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.buscador input {
+    border-top: 1px solid rgb(207, 206, 206);
+    border-left: 1px solid rgb(207, 206, 206);
+    border-bottom: 1px solid rgb(207, 206, 206);
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+}
+
+.buscador i {
+    border-top: 1px solid rgb(207, 206, 206);
+    border-right: 1px solid rgb(207, 206, 206);
+    border-bottom: 1px solid rgb(207, 206, 206);
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    padding: 10px;
+    background-color: white;
+    color: rgb(177, 174, 174);
+}
+
+.tarjeta {
+    justify-self : center;
+    font-weight: normal;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.listas {
+    display: none;
+}
+
+.listas ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.listas a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+main {
+    margin: 0 auto;
+    width: 90vw;
+    
+}
+
+h3 {
+    color: black;
+    font-size: 24px;
+    margin: 50px 0px 20px 0px;
+}
+
+.ingresar {
+    text-align: center;
+    margin: 30px 0px 100px 0px;
+}
+
+.ingresar input {
+    width: 80%;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.ingresar div input{
+    margin: 15px 0px;
+}
+
+.ingresar button {
+    width: 80%;
+    border-radius: 6px;
+    padding: 5px;
+    margin-top: 15px;
+    background-color: #1259c3;
+    color: white;
+    transition: all 0.5s;
+}
+
+.ingresar button:hover {
+    background-color: #0022aa;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer div, footer>p {
+    padding-top: 45px;
+}
+
+footer i {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: color 0.5s;
+}
+
+footer i:hover{
+    color: #03264C;
+}
+
+@media (min-width: 769px){
+    .cabecera-principal {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2%;
+    }
+    .logo, .buscador, .tarjeta {
+        width: 33%;
+    }
+    .tarjeta {
+        max-width: 235px;
+        text-align: right;
+        font-size: 12px;
+        margin: 0;
+    }
+    .menu-hamburguesa {
+        display: none;
+    }
+    .listas {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    .listas ul {
+        display: flex;
+        width: 50%;
+        align-items: flex-end;
+    }
+    .lista01 {
+        justify-content: flex-start;
+    }
+    .lista02 {
+        justify-content: flex-end;
+    }
+    .listas li {
+        margin: 0 8px;
+    }
+}
+
+@media (min-width: 1200px){
+    .cabecera-principal, .listas {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .tarjeta {
+        max-width: 232px;
+    }
+    .listas {
+        margin-top: 10px;
+    }
+    .ingresar input {
+        width: 60%;
+    }
+    .ingresar button {
+        width: 60%;
+    }
+    .beneficios {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .beneficios div {
+        width: 30%;
+        padding-bottom: 45px;
+    }
+    .beneficios div i {
+        transition: color 0.5s;
+    }
+    .beneficios div i:hover{
+        color: #03264C;
+    }
+    footer>p {
+        text-align: start;
+    }
+}
